@@ -1,0 +1,443 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 40%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr 15%;
+    grid-template-areas:
+        "iphone iphone iphone iphone iphone iphone learn-more learn-more learn-more learn-more learn-more learn-more"
+        "keyboard keyboard keyboard imac imac imac imac imac imac cd-rom cd-rom cd-rom"
+        "games games games ipad ipad ipad ipad ipad ipad cd-rom cd-rom cd-rom"
+        "twitter twitter twitter popular popular popular tv tv tv tv tv tv";
+}
+
+.iphone {
+    /* width: 80%; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-inline: 7%;
+    grid-area: iphone;
+}
+
+.iphone img {
+    margin-top: 35px;
+}
+
+.iphone .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 34%;
+}
+
+h4 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    color: #9fa3a7;
+    letter-spacing: 2px;
+    font-size: 13px;
+    text-transform: uppercase;
+    line-height: 25px;
+}
+
+h3 {
+    font-family: Arvo, sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    margin-block: 20px;
+    color: #333;
+}
+
+.iphone .content p {
+    color: #9fa3a7;
+    line-height: 25px;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    width: 200px;
+}
+
+
+
+
+
+.learn-more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-area: learn-more;
+    background-color: #f7f8f9;
+    padding-block: 50px;
+}
+
+.learn-more h1 {
+    max-width: 500px;
+    font-family: Arvo, sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 50px;
+    margin-top: 20px;
+    color: #333;
+}
+
+.learn-more a {
+    color: #27b9c2;
+    margin-top: 13px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+}
+
+
+
+.keyboard {
+    background-color: #f05638;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: keyboard;
+    padding-block: 40px;
+
+}
+
+.keyboard img {
+    width: 100%;
+}
+
+.keyboard h3 {
+    font-size: 22px;
+    line-height: 30px;
+    color: white;
+    font-family: Arvo, sans-serif;
+    max-width: 200px;
+    text-align: center;
+}
+
+.keyboard a {
+    text-decoration: none;
+    color: #ffc80a;
+    margin-top: 13px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+
+
+
+.imac {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: imac;
+    overflow: hidden;
+}
+
+.imac h4 {
+    width: 63%;
+}
+
+.imac .imac-screen {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+    text-align: start;
+}
+
+.imac .imac-screen h3 {
+    max-width: 65%;
+    margin-top: 10px;
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #333;
+}
+
+.imac .imac-screen .imac-img {
+    width: 400px;
+    transform: translate(-150px, 18px);
+
+}
+
+.imac .imac-screen img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.imac .imac-content {
+    width: 42%;
+    font-size: 14px;
+    line-height: 25px;
+    font-family: 'Open Sans', sans-serif;
+    color: #9fa3a7;
+}
+
+.imac .imac-content p {
+    max-width: 250px;
+}
+
+.imac .imac-content a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: #27b9c2;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 26px;
+    margin-top: 20px;
+
+}
+
+
+
+.cd-rom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0;
+    grid-area: cd-rom;
+    background-color: #8f76bc;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    background-color: rgb(129 102 176);
+}
+
+.circle .pop {
+    padding: 2px 15px 2px 30px;
+    background-color: rgb(255 255 255 / 8%);
+    border-radius: 50px;
+    background-image: url(../images/5bc2f42d5a5ed9663e707e7d_Shape.png);
+    background-position: 11px 50%;
+    background-size: 12px;
+    background-repeat: no-repeat;
+    font-size: 10px;
+    letter-spacing: 2.5px;
+    font-weight: 700;
+    line-height: 30px;
+    color: white;
+}
+
+.circle img {
+    margin-top: 20px;
+    width: 65%;
+}
+
+.circle h4 {
+    color: white;
+}
+
+.cd-rom h2 {
+    font-size: 32px;
+    font-family: Arvo, sans-serif;
+    font-weight: 700;
+    color: white;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.cd-rom p {
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    max-width: 240px;
+    margin-block: 20px;
+}
+
+.cd-rom a {
+    padding: 15px 18px;
+    background-color: #ffc80a;
+    margin-top: 25px;
+    border-radius: 50px;
+    letter-spacing: 2.5px;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+}
+
+.games {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 249, 250);
+    grid-area: games;
+}
+
+.games img {
+    width: 80%;
+    position: relative;
+    left: -20px;
+    filter: drop-shadow(-2px 10px 20px rgb(219, 211, 212));
+    padding-top: 25px;
+}
+
+.games h3 {
+    max-width: 100px;
+    text-align: center;
+}
+
+.games a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: #27b9c2;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 26px;
+    margin: 20px 0;
+}
+
+
+.ipad {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-area: ipad;
+    background-image: url(../images/5bc2f42d5a5ed97dab707e7e_UX.png);
+    background-position: bottom;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-color: rgb(147, 182, 184);
+    text-align: center;
+    position: relative;
+}
+
+.ipad h4 {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    padding: 2px 10px;
+    background-color: rgb(250, 105, 80);
+    border-radius: 8px;
+    color: white;
+    font-size: 9px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+}
+
+.ipad h3 {
+    margin: auto;
+    padding: 20px 0;
+    max-width: 230px;
+    color: white;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.ipad img {
+    position: relative;
+    left: -45px;
+    width: 90%;
+}
+
+
+.twitter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #38d5f4;
+    grid-area: twitter;
+}
+
+.twitter .circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 230px;
+    height: 260px;
+    border-radius: 50%;
+    background-color: rgb(71, 203, 230);
+}
+
+.twitter .circle img {
+    width: 20%;
+}
+
+.twitter .circle h3 {
+    color: white;
+    max-width: 200px;
+    text-align: center;
+}
+
+
+.popular {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f8f9;
+    grid-area: popular;
+    padding-block: 30px;
+}
+
+.popular h4 {
+    padding: 2px 10px;
+    background-color: #7bc424;
+    border-radius: 8px;
+    color: white;
+    font-size: 9px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+}
+
+.popular h3 {
+    max-width: 240px;
+    text-align: center;
+}
+
+.tv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: tv;
+    background-color: #2c2c2c;
+    overflow: hidden;
+    grid-area: tv;
+}
+
+.tv h3 {
+    text-align: start;
+    color: white;
+    width: 31%;
+}
+
+.tv img {
+    position: relative;
+    left: -30px;
+}

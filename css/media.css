@@ -1,0 +1,68 @@
+@media (max-width:992px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        /* grid-template-rows: auto 1fr 1fr 1fr auto auto auto auto ; */
+        grid-template-areas:
+            "learn-more learn-more learn-more learn-more"
+            "iphone iphone iphone iphone"
+            "keyboard keyboard games games"
+            "imac imac imac imac"
+            "twitter twitter cd-rom cd-rom"
+            "ipad ipad cd-rom cd-rom"
+            "popular popular popular popular"
+            "tv tv tv tv";
+    }
+
+    .learn-more h1 {
+        font-size: 35px;
+    }
+
+    .iphone img {
+        width: 55%;
+    }
+
+    .iphone .content {
+        width: 35%;
+    }
+
+    .iphone .content p {
+        width: 150px;
+    }
+
+    .imac .imac-screen h3 {
+        max-width: 90%;
+    }
+
+    .imac .imac-screen .imac-img {
+        transform: translate(-150px, 12px);
+    }
+
+    .imac .imac-screen img {
+        width: 100%;
+        /* position: relative;
+        left: -76%;
+        bottom: -27px; */
+        overflow: hidden;
+    }
+
+    .imac .imac-content p {
+        max-width: 300px;
+    }
+
+    .cd-rom p {
+        max-width: 179px;
+    }
+
+    .ipad img {
+        left: -20px;
+    }
+
+    .popular h3 {
+        max-width: fit-content;
+    }
+
+    .tv img {
+        width: 55%;
+    }
+
+}
